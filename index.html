@@ -26,11 +26,18 @@
             <div class="slides">
                 <section>
                     <h4>Jive Summer Internship Retrospective</h4>
+                    <hr>
 
                     Alec Merdler
                 </section>
                 <section>
                     <h4>About Me</h4>
+                    <hr>
+
+                    <img
+                    src="./img/IMG_20160614_080608.jpg"
+                    style="height: 200px"
+                    alt="" />
 
                     <ul>
                         <li>Senior at Oregon State University studying Computer Science</li>
@@ -39,60 +46,153 @@
                     </ul>
                 </section>
                 <section>
-                    <h4>My Dilemna</h4>
+                    <h4>Summer Dilemna</h4>
                     <i>Work for the startup or go for an internship?</i>
-                    <br><br>
+                    <hr>
 
                     <u>Internship:</u>
                     <br>
                     <ul>
-                        <li>Experience in the tech industry</li>
-                        <li>Work on projects that affect thousands of customers</li>
-                        <li>Probably spend all day fixing bugs in other people's code</li>
+                        <li style="color: green;">Experience in the tech industry</li>
+                        <li style="color: green;">Work on projects that affect thousands of customers</li>
+                        <li style="color: red;">Probably spend all day fixing bugs in other people's code</li>
                     </ul>
                     <br><br>
 
                     <u>Startup:</u>
                     <br>
                         <ul>
-                            <li>Lead a team and have more freedom</li>
-                            <li>Work on the same old project beta, with fewer active users</li>
+                            <li style="color: green;">Lead a team and have more freedom</li>
+                            <li style="color: red;">Work on the same old project beta, with fewer active users</li>
                         </ul>
                 </section>
                 <section>
                     <h4>My Decision: Jive Software</h4>
+                    <hr>
 
                     <ul>
                         <li>Jive won me over with its startup-feel, but big-business resources</li>
-                        <li>Meeting with Ryan and Adam</li>
+                        <li>Meeting with Ryan and Adam, something clicked</li>
                         <li>Felt I could make a real difference at Jive, while improving myself</li>
                     </ul>
                 </section>
                 <section>
                     <h4>First Week</h4>
+                    <hr>
 
                     <ul>
                         <li>Wanted to hit the ground running, so I did</li>
                         <li>Dev environment set up in only 2 days</li>
-                        <li>Resolved 3 bugs</li>
+                        <li>Met the Core Engineering team</li>
+                        <li>Started working on bugs for 2016.2</li>
                     </ul>
                 </section>
                 <section>
                     <h4>Keeping up the Pace</h4>
+                    <hr>
 
                     <ul>
                         <li>Continued investigating, fixing, and resolving issues</li>
                         <li>Never stopped asking questions</li>
-                        <li>Eventually moved off "Intern Island" to join the rest of the team</li>
+                        <li>Broke the build a couple times</li>
+                        <li>Competed against Ryan for who could stay in the office longest (I won)</li>
                     </ul>
                 </section>
                 <section>
-                    <h4>Highlights<h4>
+                    <h4>Timezones: JIVE-67873</h4>
+                    <hr>
+
+                    <u>Problem</u>
+                    <ul>
+                        <li style="color: red;">
+                            Event due dates were being shifted ahead by one day for
+                            different timezones.
+                        </li>
+                    </ul>
+
+                    <u>Solution</u>
+                    <ul>
+                        <li style="color: green;">Default due date time was always 11:59pm of the creating user</li>
+                        <li style="color: green;">Event due dates were not localized</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>XSS: CLOUD-13</h4>
+                    <hr>
+
+                    <u>Problem</u>
+                    <ul>
+                        <li style="color: red;">
+                            Document title could contain JavaScript, and executed when rendered in the
+                            Popular Content tile
+                        </li>
+                        <li style="color: red;">Regression I created when trying to get UTF-8 characters to show</li>
+                    </ul>
+
+                    <u>Solution</u>
+                    <ul>
+                        <li style="color: green;">Keep the title in raw state until the very last rendering step</li>
+                        <li style="color: green;">Escape the malicious characters using Soy template</li>
+                        <li style="color: green;">Able to have special characters and no XSS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Finally, Some Features!</h4>
+                    <hr>
+
+                    <img
+                        src="./img/Screen Shot 2016-09-08 at 8.45.46 AM.png"
+                        style="height: 200px"
+                        alt="" />
+                    <img
+                        src="./img/Screen Shot 2016-09-08 at 8.51.55 AM.png"
+                        style="height: 200px"
+                        alt="" />
+
+                    <ul>
+                        <li>Worked on tile configuration and async performance for 2016.3</li>
+                        <li>Awesome collaboration with other engineers, design, and QA</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Highlights</h4>
 
                         <ul>
                             <li>Spent many hours talking with Jivers about technology and their experiences</li>
-                            <li></li>
+                            <li>Working on the deck</li>
+                            <li>Edgefield</li>
                         </ul>
+                </section>
+                <section>
+                    <h4>What I Gave Jive</h4>
+                    <hr>
+
+                    <ul>
+                        <li>Over 60 resolved issues in 14 weeks</li>
+                        <li>Extensible tile configuration API</li>
+                        <li>Fixed security issues, including phishing vectors and XSS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>What Jive Gave Me</h4>
+                    <hr>
+
+                    <ul>
+                        <li>Many, many fizzy waters and Red Bulls</li>
+                        <li>Knowledge of how to work and communicate with engineers, design, and QE</li>
+                        <li>A love for Java</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Thanks</h4>
+                    <hr>
+
+                    <ul>
+                        <li>Ryan King</li>
+                        <li>Rebecca Trejo</li>
+                        <li>Josh, Josh, Spera, Brixey, Christian</li>
+                        <li>Everyone at Jive</li>
+                    </ul>
                 </section>
             </div>
         </div>
